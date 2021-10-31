@@ -1,0 +1,107 @@
+/* body */
+
+body {
+    font-family: 'Zen Maru Gothic', sans-serif;
+    padding: 0 16;
+    max-width: 900px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+section {
+    padding: 16px 0;
+}
+
+h2 {
+    margin: 0;
+    margin-bottom: 12px;
+}
+
+/* navigation section */
+
+#logo {
+    font-family: 'Arvo', serif;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+.navigation-items {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    margin-left: auto;
+}
+
+.navigation-item {
+    margin: 10px;
+}
+
+/* about me section */
+
+.about-me-container {
+    display: flex;
+}
+
+.about-me-text-container{
+    margin-right: 18px;
+}
+
+.portrait {
+    width: 250px;
+    border-radius: 50%;
+}
+
+/* projects section */
+details {
+    cursor: pointer;
+}
+
+summary {
+    list-style-image: url(./Antu_arrow-right.svg);
+}
+
+.project-title h3 {
+    display: inline;
+}
+
+.project-image {
+    width: 50%;
+}
+/* skills section */
+
+#skills-container {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#skills-container > * {
+    font-size: 2em;
+    width: 2em;
+    margin-top: 10px;
+}
+
+.icon {
+    font-size: 2em;
+    margin: 0 8px;
+}
+
+
+
+/* footer */
+
+footer {
+    margin-top: auto;
+    padding: 12px;
+    text-align: center;
+}
