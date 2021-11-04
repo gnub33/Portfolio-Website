@@ -13,6 +13,7 @@ section {
     padding: 16px 0;
 }
 
+
 h2 {
     margin: 0;
     margin-bottom: 12px;
@@ -22,7 +23,25 @@ h2 {
 
 #logo {
     font-family: 'Arvo', serif;
+    font-size: 1.75rem;
+    text-align: center;
+
 }
+
+span {
+    opacity: 0;
+    transition: all 0.5s ease;
+    transform: translateY(50px);
+    display: inline-block;
+    /* need to add section animation after translate ends. A delayed color transition*/
+}
+
+span.fade {
+    opacity:1;
+    transform: translateY(0);
+}
+
+
 
 a {
     color: black;
@@ -30,6 +49,7 @@ a {
 }
 
 nav {
+    padding-top: 20px;
     display: flex;
     align-items: center;
 }
@@ -61,21 +81,18 @@ nav {
 }
 
 /* projects section */
-details {
-    cursor: pointer;
+
+.box {
+    display: none;
+    width: 100%;
 }
 
-summary {
-    list-style-image: url(./Antu_arrow-right.svg);
+a:hover + .box,.box:hover {
+    display: block;
+    position: relative;
+    z-index: 100;
 }
 
-.project-title h3 {
-    display: inline;
-}
-
-.project-image {
-    width: 50%;
-}
 /* skills section */
 
 #skills-container {

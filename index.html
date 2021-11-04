@@ -11,11 +11,21 @@
     <link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Arvo:ital@0;1&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/129cb302d2.js" crossorigin="anonymous"></script>
-    
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+  <link href="http://codegena.com/assets/css/image-preview-for-link.css" rel="stylesheet">     
+  <script type="text/javascript">
+    $(function() {
+                $('#p1 a').miniPreview({ prefetch: 'pageload' });
+                $('#p2 a').miniPreview({ prefetch: 'parenthover' });
+                $('#p3 a').miniPreview({ prefetch: 'none' });
+            });
+  </script> <script src="http://codegena.com/assets/js/image-preview-for-link.js"></script>
 </head>
 <body>
+
     <nav>
-        <h2 id="logo">Daniel Knight</h2>
+        <h2 id="logo" class = "fancy">Daniel Knight</h2>
+        <script src="./main.js"></script>
         <ul class="navigation-items">
             <li class="navigation-item">
                 <a href="#about-me">About Me</a>
@@ -44,21 +54,21 @@
             </div>
         </section>
         <section id="projects">
+
             <h2>Projects</h2>
-            <details class="project">
-                <summary class="project-title">
-                    <h3>A picture of my waifu</h3>
-                </summary>
-                <img src="https://devilchan.com/sample/2020/10/14/17/22/2539/kawaii-neko-girl-2539-600x851.webp" alt="cute anime girl" class="project-image">
-                <p class="project-description">"Placeholder for my awesome project"</p>
-            </details>
-            <details class="project">
-                <summary class="project-title">
-                    <h3>Two Silly Chibi Girls</h3>
-                </summary>
-                <img src="https://pbs.twimg.com/media/FB1AlMJVkAMzFH1?format=jpg&name=medium" alt="chibi anime" class="project-image">
-                <p class="project-description">"Another placeholder for my awesome project"</p>
-            </details>
+            <h3>
+                <div><p id="p1"><a href="https://gnub33.github.io/sky-gazers/">SKY GAZERS</a></p></div>
+            </h3>
+            <h3>
+                <div><p id="p1"><a href="https://gnub33.github.io/Guitar-Savers/">Guitar Savers</a></p></div>
+            </h3>
+           <h3>
+               
+                <div id="p1"><a href="https://gnub33.github.io/To-Do-App/">To Do App (not mine)</a></div>
+           </h3>
+
+            
+
         </section>
         <section id="skills">
             <h2>Skills</h2>
